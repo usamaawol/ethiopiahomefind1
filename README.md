@@ -225,6 +225,8 @@ Vite will display the local development URL in the terminal (typically http://lo
 | npm test | Run the Vitest suite once |
 | npm run test:watch | Run tests in watch mode |
 
+
+
 ## Project Structure
 
 ethiopiahomefind1/
@@ -262,6 +264,9 @@ ethiopiahomefind1/
 ├── tailwind.config.ts               # Tailwind CSS configuration
 ├── vite.config.ts                   # Vite configuration
 └── vitest.config.ts                 # Vitest testing configuration
+
+
+
 ## How the Listing Workflow Works
 
 1. A property owner signs in and completes the listing form.
