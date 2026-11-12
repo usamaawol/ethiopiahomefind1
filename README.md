@@ -227,34 +227,41 @@ Vite will display the local development URL in the terminal (typically http://lo
 
 ## Project Structure
 
-\`\`\`text
 ethiopiahomefind1/
-├── public/                      # Static public assets
+│
+├── public/                          # Static files and public assets
+│
 ├── src/
-│   ├── assets/                  # Imported images and visual assets
+│   ├── assets/                      # Images, icons, and visual assets
+│   │
 │   ├── components/
-│   │   ├── cards/               # Property and city cards
-│   │   ├── layout/              # Shared layout and navigation
-│   │   └── ui/                  # Reusable UI components
-│   ├── contexts/                # Auth, language, and theme providers
-│   ├── data/                    # City directory and sample property data
-│   ├── hooks/                   # Reusable React hooks
-│   ├── integrations/supabase/   # Generated Supabase client and types
-│   ├── lib/                     # Firebase, Cloudinary, and utility modules
-│   ├── pages/                   # Route-level pages
-│   ├── test/                    # Test setup and example tests
-│   ├── App.tsx                  # Providers and route definitions
-│   └── main.tsx                 # Frontend entry point
+│   │   ├── cards/                   # Property and city cards
+│   │   ├── layout/                  # Shared layouts and navigation
+│   │   └── ui/                      # Reusable UI components
+│   │
+│   ├── contexts/                    # Authentication, language, and theme contexts
+│   ├── data/                        # City directory and sample property data
+│   ├── hooks/                       # Custom React hooks
+│   │
+│   ├── integrations/
+│   │   └── supabase/                # Supabase client and generated types
+│   │
+│   ├── lib/                         # Firebase, Cloudinary, and utility modules
+│   ├── pages/                       # Application pages and route views
+│   ├── test/                        # Test configuration and example tests
+│   │
+│   ├── App.tsx                      # Application providers and routes
+│   └── main.tsx                     # Frontend entry point
+│
 ├── supabase/
 │   └── functions/
-│       └── gemini-proxy/        # Gemini API proxy Edge Function
-├── FIREBASE_SETUP.md            # Firestore rules and setup notes
-├── package.json
-├── tailwind.config.ts
-├── vite.config.ts
-└── vitest.config.ts
-\`\`\`
-
+│       └── gemini-proxy/            # Gemini API proxy Edge Function
+│
+├── FIREBASE_SETUP.md                # Firebase configuration and Firestore rules
+├── package.json                     # Dependencies and project scripts
+├── tailwind.config.ts               # Tailwind CSS configuration
+├── vite.config.ts                   # Vite configuration
+└── vitest.config.ts                 # Vitest testing configuration
 ## How the Listing Workflow Works
 
 1. A property owner signs in and completes the listing form.
